@@ -24,24 +24,18 @@ import java.math.BigDecimal;
 interface ITerm
 {
     /**
-     * Retrieves the string representation of the term.
-     *
-     * This is the same as the toString function that is seen with all Java objects; however,
-     * the method is declared here again in order to force a contract with all derived classes
-     * to implement functionality for making a string representation as all terms should have
-     * a string representation.
-     *
-     * @return A string representation of the term.
-     */
-    String toString();
-
-    /**
      * Evaluates a term numerically and then returns the result.
      *
-     * @param precision The number of digits of precision that should be used in all calculations
+     * The result is a ValueTerm object of a numeric term type that is guaranteed to have exactly
+     * the given precision. The value type generally is of integer, real, imaginary,
+     * complex, natural, quaternion, or symbolic term type.
+     * Any ties that arise in rounding will be broken to the nearest even number.
+     *
+     * @param precision The number of decimal digits of precision that should be used in all
+     *                  calculations
      * @return A BigDecimal object representing the result of evaluating the term numerically
      */
-    BigDecimal evaluate(int precision);
+    AbstractValueTerm evaluate(int precision);
 
     /**
      * Gets a view children of the term. Modifications to this view are neither guaranteed to modify
