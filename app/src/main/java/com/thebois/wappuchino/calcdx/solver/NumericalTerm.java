@@ -2,6 +2,8 @@ package com.thebois.wappuchino.calcdx.solver;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.math.MathContext;
+import java.math.RoundingMode;
 
 /**
  * Created by wappuchino on 12/17/17.
@@ -152,26 +154,34 @@ public class NumericalTerm extends AbstractValueTerm {
         return true;
     }
 
-    public NumericalTerm add(NumericalTerm other)
+    public AbstractValueTerm add(AbstractValueTerm o, int precision)
     {
-        return new NumericalTerm(realValue.add(other.realValue), imaginaryValue.add(other.imaginaryValue));
+        MathContext mc = new MathContext(precision, RoundingMode.HALF_EVEN);
+        NumericalTerm other = (NumericalTerm)o;
+        return new NumericalTerm(realValue.add(other.realValue, mc), imaginaryValue.add(other.imaginaryValue, mc));
     }
 
-    public NumericalTerm subtract(NumericalTerm other)
+    public AbstractValueTerm subtract(AbstractValueTerm o, int precision)
     {
-        return new NumericalTerm(realValue.subtract(other.realValue), imaginaryValue.subtract(other.imaginaryValue));
+        MathContext mc = new MathContext(precision, RoundingMode.HALF_EVEN);
+        NumericalTerm other = (NumericalTerm)o;
+        return new NumericalTerm(realValue.subtract(other.realValue, mc), imaginaryValue.subtract(other.imaginaryValue, mc));
     }
 
-    public NumericalTerm multiply(NumericalTerm other)
+    public AbstractValueTerm multiply(AbstractValueTerm o, int precision)
     {
-        return new NumericalTerm(realValue.multiply(other.realValue).subtract(imaginaryValue.multiply(other.imaginaryValue)),
-                realValue.multiply(other.imaginaryValue).add(other.realValue.multiply(imaginaryValue)));
+        MathContext mc = new MathContext(precision, RoundingMode.HALF_EVEN);
+        NumericalTerm other = (NumericalTerm)o;
+        return new NumericalTerm(realValue.multiply(other.realValue, mc).subtract(imaginaryValue.multiply(other.imaginaryValue, mc), mc),
+                realValue.multiply(other.imaginaryValue, mc).add(other.realValue.multiply(imaginaryValue, mc), mc));
     }
 
-    public NumericalTerm divide(NumericalTerm other)
+    public AbstractValueTerm divide(AbstractValueTerm o, int precision)
     {
-        BigDecimal commonFactor = other.realValue.pow(2).add(other.imaginaryValue.pow(2));
-        return new NumericalTerm(realValue.multiply(other.realValue).add(imaginaryValue.multiply(other.imaginaryValue)).divide(commonFactor),
-                imaginaryValue.multiply(other.realValue).subtract(realValue.multiply(other.imaginaryValue)).divide(commonFactor));
+        MathContext mc = new MathContext(precision, RoundingMode.HALF_EVEN);
+        NumericalTerm other = (NumericalTerm)o;
+        BigDecimal commonFactor = other.realValue.pow(2, mc).add(other.imaginaryValue.pow(2, mc), mc);
+        return new NumericalTerm(realValue.multiply(other.realValue, mc).add(imaginaryValue.multiply(other.imaginaryValue, mc), mc).divide(commonFactor, mc),
+                imaginaryValue.multiply(other.realValue, mc).subtract(realValue.multiply(other.imaginaryValue, mc), mc).divide(commonFactor, mc));
     }
 }

@@ -94,4 +94,10 @@ public abstract class AbstractValueTerm extends AbstractTerm {
      * otherwise.
      */
     public abstract boolean isComplex();
+
+    public abstract AbstractValueTerm add(AbstractValueTerm other, int precision);
+    public abstract AbstractValueTerm subtract(AbstractValueTerm other, int precision);
+    public abstract AbstractValueTerm multiply(AbstractValueTerm other, int precision);
+    public abstract AbstractValueTerm divide(AbstractValueTerm other, int precision);
+
 }
