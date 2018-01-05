@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CalcDX.iml" filepath="$PROJECT_DIR$/CalcDX.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Ari\Documents\GitHub\CalcDX\CalcDX.iml" filepath="C:\Users\Ari\Documents\GitHub\CalcDX\CalcDX.iml" />
+      <module fileurl="file://C:\Users\Ari\Documents\GitHub\CalcDX\app\app.iml" filepath="C:\Users\Ari\Documents\GitHub\CalcDX\app\app.iml" />
     </modules>
   </component>
 </project>
