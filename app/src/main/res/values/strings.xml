@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Scholar Calculator</string>
+    <string name="test_string">X&lt;sup&gt;3&lt;/sup&gt;</string>
+</resources>
