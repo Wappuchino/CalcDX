@@ -3,43 +3,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
 
     tools:context="com.thebois.calcdx.MainActivity">
 
-    <me.grantland.widget.AutofitLayout
-        android:id="@+id/text"
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="right">
+        android:id="@+id/textX">
+        <me.grantland.widget.AutofitLayout
 
-        <me.grantland.widget.AutofitTextView
-            android:id="@+id/output"
             android:layout_width="match_parent"
-            android:layout_height="125dp"
-            android:background="@color/primary"
-            android:maxLines="2"
-            android:paddingBottom="35dp"
-            android:paddingRight="5dp"
-            android:paddingTop="35dp"
-            android:scrollHorizontally="true"
-            android:scrollbars="horizontal"
-            android:singleLine="true"
-            android:text=""
-            android:textAlignment="textEnd"
-            android:textAllCaps="false"
-            android:textColor="#FFF"
-            android:textSize="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
 
-            />
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/output"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/C"
+                android:maxLines="2"
+                android:paddingRight="5dp"
+                android:scrollHorizontally="true"
+                android:scrollbars="horizontal"
+                android:singleLine="true"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:textAllCaps="false"
+                android:textColor="@color/A"
+                android:textSize="50dp"
+                />
 
-    </me.grantland.widget.AutofitLayout>
+        </me.grantland.widget.AutofitLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textX"
+        android:id="@+id/text">
+        <me.grantland.widget.AutofitLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/outputO"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/C"
+                android:maxLines="2"
+                android:paddingRight="5dp"
+                android:scrollHorizontally="true"
+                android:scrollbars="horizontal"
+                android:singleLine="true"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:textAllCaps="false"
+                android:textColor="@color/A"
+                android:textSize="25dp"
+                />
+
+        </me.grantland.widget.AutofitLayout>
+
+    </LinearLayout>
+
+
+
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/text"
-        android:background="@color/primary_text"
+        android:background="@color/B"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -47,7 +88,7 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/primary_text"
+            android:background="@color/B"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -63,8 +104,8 @@
 
             <Button
                 android:id="@+id/b8"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:layout_margin="5dp"
                 android:layout_toRightOf="@id/b7"
                 android:background="@drawable/round_button"
@@ -99,7 +140,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/primary_text"
+            android:background="@color/B"
             android:orientation="horizontal">
 
             <Button
@@ -151,7 +192,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/primary_text"
+            android:background="@color/B"
             android:orientation="horizontal">
 
             <Button
@@ -201,7 +242,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/primary_text"
+            android:background="@color/B"
             android:orientation="horizontal">
 
             <Button
@@ -244,7 +285,7 @@
                 android:layout_margin="5dp"
                 android:layout_toRightOf="@id/mod"
                 android:background="@drawable/round_button"
-                android:text="_"
+                android:text="-"
                 android:textColor="@color/icons"
                 android:textSize="40dp" />
         </RelativeLayout>
@@ -254,7 +295,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@color/primary_text"
+            android:background="@color/B"
             android:orientation="horizontal">
 
             <Button

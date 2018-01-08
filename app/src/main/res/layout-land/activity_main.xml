@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.ari.scholarcalculator.MainActivity">
+    tools:context="com.thebois.calcdx.MainActivity">
 
     <me.grantland.widget.AutofitLayout
         android:layout_width="match_parent"

@@ -381,155 +381,167 @@ public class MainActivity extends FragmentActivity {
             @Override
             public void onClick(View v) {
 
-                if (newP) {
-                    outFunction.add("1");
-                    output.setText("1");
-                } else {
-                    outFunction.add("1");
-                    output.setText(output.getText() + "1");
-                }
+                if(canAdd("1")) {
+                    if (newP) {
+                        outFunction.add("1");
+                        output.setText("1");
+                    } else {
+                        outFunction.add("1");
+                        output.setText(output.getText() + "1");
+                    }
 
-                newP = false;
+                    newP = false;
+                }
 
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(canAdd("2")) {
 
-                if (newP) {
-                    outFunction.add("2");
-                    output.setText("2");
-                } else {
-                    outFunction.add("2");
-                    output.setText(output.getText() + "2");
+                    if (newP) {
+                        outFunction.add("2");
+                        output.setText("2");
+                    } else {
+                        outFunction.add("2");
+                        output.setText(output.getText() + "2");
+                    }
+
+                    newP = false;
                 }
-
-                newP = false;
 
             }
         });
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(canAdd("3")) {
+                    if (newP) {
+                        outFunction.add("3");
+                        output.setText("3");
+                    } else {
+                        outFunction.add("3");
+                        output.setText(output.getText() + "3");
+                    }
 
-                if (newP) {
-                    outFunction.add("3");
-                    output.setText("3");
-                } else {
-                    outFunction.add("3");
-                    output.setText(output.getText() + "3");
+                    newP = false;
                 }
-
-                newP = false;
             }
         });
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (newP) {
-                    outFunction.add("4");
-                    output.setText("4");
-                } else {
-                    outFunction.add("4");
-                    output.setText(output.getText() + "4");
+                if(canAdd("4")) {
+                    if (newP) {
+                        outFunction.add("4");
+                        output.setText("4");
+                    } else {
+                        outFunction.add("4");
+                        output.setText(output.getText() + "4");
+                    }
+                    newP = false;
                 }
-                newP = false;
             }
         });
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (newP) {
-                    outFunction.add("5");
-                    output.setText("5");
-                } else {
-                    outFunction.add("5");
-                    output.setText(output.getText() + "5");
+                if(canAdd("5")) {
+                    if (newP) {
+                        outFunction.add("5");
+                        output.setText("5");
+                    } else {
+                        outFunction.add("5");
+                        output.setText(output.getText() + "5");
+                    }
+                    newP = false;
                 }
-                newP = false;
             }
         });
         b6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (newP) {
-                    outFunction.add("6");
-                    output.setText("6");
-                } else {
-                    outFunction.add("6");
-                    output.setText(output.getText() + "6");
+                if(canAdd("6")) {
+                    if (newP) {
+                        outFunction.add("6");
+                        output.setText("6");
+                    } else {
+                        outFunction.add("6");
+                        output.setText(output.getText() + "6");
+                    }
+                    newP = false;
                 }
-                newP = false;
             }
         });
         b7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (newP) {
-                    outFunction.add("7");
-                    output.setText("7");
-                } else {
-                    outFunction.add("7");
-                    output.setText(output.getText() + "7");
+                if(canAdd("7")) {
+                    if (newP) {
+                        outFunction.add("7");
+                        output.setText("7");
+                    } else {
+                        outFunction.add("7");
+                        output.setText(output.getText() + "7");
+                    }
+                    newP = false;
                 }
-                newP = false;
             }
         });
         b8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (newP) {
-                    outFunction.add("8");
-                    output.setText("8");
-                } else {
-                    outFunction.add("8");
-                    output.setText(output.getText() + "8");
+                if(canAdd("8")) {
+                    if (newP) {
+                        outFunction.add("8");
+                        output.setText("8");
+                    } else {
+                        outFunction.add("8");
+                        output.setText(output.getText() + "8");
+                    }
+                    newP = false;
                 }
-                newP = false;
             }
         });
         b9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (newP) {
-                    outFunction.add("9");
-                    output.setText("9");
-                } else {
-                    outFunction.add("9");
-                    output.setText(output.getText() + "9");
+                if(canAdd("9")) {
+                    if (newP) {
+                        outFunction.add("9");
+                        output.setText("9");
+                    } else {
+                        outFunction.add("9");
+                        output.setText(output.getText() + "9");
+                    }
+                    newP = false;
                 }
-                newP = false;
             }
         });
         b0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (newP) {
-                    outFunction.add("0");
-                    output.setText("0");
-                } else {
-                    outFunction.add("0");
-                    output.setText(output.getText() + "0");
+                if(canAdd("0")) {
+                    if (newP) {
+                        outFunction.add("0");
+                        output.setText("0");
+                    } else {
+                        outFunction.add("0");
+                        output.setText(output.getText() + "0");
+                    }
+                    newP = false;
                 }
-                newP = false;
             }
         });
         subtract.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-
-                outFunction.add("-");
-                output.setText(output.getText() + "-");
-
+                if(canAdd("-")) {
+                    outFunction.add("-");
+                    output.setText(output.getText() + "-");
+                }
 
             }
         });
@@ -547,7 +559,7 @@ public class MainActivity extends FragmentActivity {
             @Override
             public void onClick(View v) {
 
-                if (outFunction.size() > 0 && !outFunction.get(outFunction.size() - 1).equals("+")) {
+                if (canAdd("+")) {
                     outFunction.add("+");
                     output.setText(output.getText() + "+");
                 }
@@ -557,7 +569,7 @@ public class MainActivity extends FragmentActivity {
             @Override
             public void onClick(View v) {
 
-                if (outFunction.size() > 0 && !outFunction.get(outFunction.size() - 1).equals("*")) {
+                if (canAdd("*")) {
                     outFunction.add("*");
                     output.setText(output.getText() + "x");
                 }
@@ -567,7 +579,7 @@ public class MainActivity extends FragmentActivity {
             @Override
             public void onClick(View v) {
 
-                if (outFunction.size() > 0 && !outFunction.get(outFunction.size() - 1).equals("/")) {
+                if (canAdd("/")) {
                     outFunction.add("/");
                     output.setText(output.getText() + "÷");
                 }
@@ -580,7 +592,24 @@ public class MainActivity extends FragmentActivity {
                 if (outFunction.size() > 0) {
                     outFunction.remove(outFunction.size() - 1);
                     //MAKE THIS OUTPUT CORRECYLY
-                    output.setText(outFunction.toString().substring(1, outFunction.toString().length() - 1).replaceAll(", ", ""));
+                    String oo = "";
+
+                    for(String a : outFunction)
+                    {
+                        if(a.equals("*"))
+                        {
+                            oo+="x";
+                        }
+                        else if(a.equals("/"))
+                        {
+                            oo+="÷";
+                        }
+                        else
+                        {
+                            oo+=a;
+                        }
+                    }
+                    output.setText(oo);
                 }
 
             }
@@ -640,7 +669,38 @@ public class MainActivity extends FragmentActivity {
 
     }
 
+    public boolean canAdd(String str)
+    {
+        int size = outFunction.size();
 
+        if(size > 14)
+        {
+            return false;
+        }
+
+        if(size > 0 )
+        {
+            if(str.equals("*") && ( outFunction.get(size-1).equals("*") || outFunction.get(size-1).equals("/") || outFunction.get(size-1).equals("+") || outFunction.get(size-1).equals("-")))
+            {
+                return false;
+            }
+            if(str.equals("/") && ( outFunction.get(size-1).equals("*") || outFunction.get(size-1).equals("/") || outFunction.get(size-1).equals("+") || outFunction.get(size-1).equals("-")))
+            {
+                return false;
+            }
+            if(str.equals("+") && ( outFunction.get(size-1).equals("*") || outFunction.get(size-1).equals("/") || outFunction.get(size-1).equals("+") || outFunction.get(size-1).equals("-")))
+            {
+                return false;
+            }
+            if(size>1) {
+                if (str.equals("-") && (outFunction.get(size - 2).equals("*") || outFunction.get(size - 2).equals("/") || outFunction.get(size - 2).equals("+") || outFunction.get(size - 2).equals("-"))) {
+                    return false;
+                }
+            }
+
+        }
+        return true;
+    }
 
     public int numberOf(String str)
     {

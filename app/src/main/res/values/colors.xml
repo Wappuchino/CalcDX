@@ -5,8 +5,16 @@
     <color name="designer_black">#004040</color>
     <color name="accent">#007EA7</color>
     <color name="flash">#ff9100</color>
-    <color name="primary_text">#212121</color>
+    <color name="primary_text">#080708</color>
     <color name="secondary_text">#727272</color>
     <color name="icons">#FFFFFF</color>
     <color name="divider">#B6B6B6</color>
+
+    <color name="A">#302530</color>
+    <color name="B">#222222</color>
+    <color name="C">#F3F2F7</color>
+    <color name="D">#FFFFFF</color>
+    <color name="E">#EB2630</color>
+
+
 </resources>
