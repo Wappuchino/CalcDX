@@ -25,8 +25,8 @@ interface IParser
      * formatted, the parser will return null; otherwise, it returns the first term (as in the
      * first term that should happen when order of operations is applied)
      *
-     * @param expression A single formatted string representing a mathematical expression
+     * @param expression A single formatted token array representing a mathematical expression
      * @return The first term that would be evaluated in standard order of operations
      */
-    ITerm parse(String expression);
+    ITerm parse(String[] expression);
 }
